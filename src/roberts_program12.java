@@ -72,7 +72,145 @@ public class roberts_program12 {
 		frame.validate();
 		frame.setVisible(true);
 	}
-	
+
+
+	//Start of backend
+	//DONE
+	private static int[] sortValues, searchValues, unsortedValues, sortedValues;
+	private static java.util.TreeSet<Integer> treeSetValues = new java.util.TreeSet<>();
+	private static java.util.HashSet<Integer> hashSetValues = new java.util.HashSet<>();
+	private static java.util.PriorityQueue<Integer> priorityQueueValues = new java.util.PriorityQueue<>();
+	private static java.util.ArrayList<Integer> arrayListValues = new java.util.ArrayList<>();
+	private static java.util.ArrayList<Integer> sortedArrayListValues = new java.util.ArrayList<>();
+	private static roberts_BinarySearchTree bst = new roberts_BinarySearchTree();
+
+	// DONE
+	private static int[] selectionSort() {
+		int[] valuesCopy = sortValues.clone();
+		for (int i = 0; i < valuesCopy.length; i++) {
+			for (int j = 0; j < valuesCopy.length; j++) {
+				if (valuesCopy[j] < valuesCopy[j]) {
+					int temp = valuesCopy[i];
+					valuesCopy[i] = valuesCopy[j];
+					valuesCopy[j] = temp;
+				}
+			}
+		}
+		return valuesCopy;
+
+	}
+
+	//TODO searchInts()
+	private static int searchInts()
+	{
+		for (int searchInt : searchValues) {
+			if
+		}
+	}
+
+	// DONE
+	private static void addToBinarySearchTree()
+	{
+		for (int sortValue : sortValues)
+		{
+			Node currentNode = new Node(sortValue);
+			bst.insertNode(currentNode);
+		}
+	}
+
+	private static int searchBinarySearchTree()
+	{
+		int count = 0;
+		for (int searchValue : searchValues) {
+			if (bst.getNode(bst.getRoot(), searchValue) != -1) {
+				count++;
+			}
+		}
+		return count;
+	}
+	// DONE
+	private static void addToTreeSet()
+	{
+		for(int sortValue : sortValues)
+		{
+			treeSetValues.add(sortValue);
+		}
+	}
+	//TODO searchTreeSet()
+	private static int searchTreeSet()
+	{
+		return 0;
+	}
+
+	private static void addToHashSet()
+	{
+		for(int sortValue : sortValues)
+		{
+			hashSetValues.add(sortValue);
+		}
+	}
+	//TODO searchHashSet()
+	private static int searchHashSet()
+	{
+		return 0;
+	}
+	// DONE
+	private static void addToPriorityQueue()
+	{
+		for(int sortValue : sortValues)
+		{
+			priorityQueueValues.add(sortValue);
+		}
+	}
+	//TODO searchPriorityQueue()
+	private static int searchPriorityQueue()
+	{
+		for (int searchValue : searchValues) {
+			if (priorityQueueValues.contains(searchValue)) ret
+		}
+	}
+	// DONE
+	private static void addToArrayList()
+	{
+		for(int sortValue : sortValues)
+		{
+			arrayListValues.add(sortValue);
+		}
+	}
+	//TODO searchArrayList()
+	private static int searchArrayList()
+	{
+		return 0;
+	}
+	// DONE
+	private static void addToSortedArrayList()
+	{
+		for (int sortValue : sortValues) {
+			sortedArrayListValues.add(sortValue);
+		}
+		java.util.Collections.sort(sortedArrayListValues);
+	}
+	//TODO searchSortedArrayList()
+	private static int searchSortedArrayList()
+	{
+		return 0;
+	}
+	// DONE
+	private static void addToArray()
+	{
+		unsortedValues = sortValues.clone();
+	}
+	//TODO searchArray()
+	private static int searchArray()
+	{
+		return 0;
+	}
+	//TODO readData()
+	private static void readData(String filename, boolean readSortValues)
+	{
+
+	}
+
 	static class MenuItemActionListener implements java.awt.event.ActionListener
 	{
 		// the menu item associated with the action listener, so that we can
