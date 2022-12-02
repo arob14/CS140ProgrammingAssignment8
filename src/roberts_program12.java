@@ -1,3 +1,4 @@
+import javax.swing.*;
 
 public class roberts_program12 {
 	
@@ -5,7 +6,35 @@ public class roberts_program12 {
 	private static int height = 350;
 	private static int width2 = 350;
 	public static void main(String[] args) {
-		
+		// left buttons
+		javax.swing.JButton sortIntsButton = new javax.swing.JButton("sort ints");
+		javax.swing.JButton addToBSTButton = new javax.swing.JButton("add to bst");
+		javax.swing.JButton addToTreeSetButton = new javax.swing.JButton("add to treeset");
+		javax.swing.JButton addToPriorityQueueButton = new javax.swing.JButton("add to priority queue");
+		javax.swing.JButton addToHashSetButton = new javax.swing.JButton("add to hashset");
+		javax.swing.JButton addToArrayListButton = new javax.swing.JButton("add to arraylist");
+		javax.swing.JButton addToSortedArrayListButton = new javax.swing.JButton("add to sorted arraylist");
+		javax.swing.JButton addToArrayButton = new javax.swing.JButton("add to array");
+
+		// Left labels
+		javax.swing.JLabel sortIntsLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel  addToBSTLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel addToTreeSetLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel addToPriorityQueueLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel addToHashSetLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel addToArrayListLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel addToSortedArrayListLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel addToArrayLabel = new javax.swing.JLabel("no result");
+
+		// right buttons
+		javax.swing.JButton searchSortedIntsButton = new javax.swing.JButton("search sorted ints");
+		javax.swing.JButton searchBSTButton = new javax.swing.JButton("search bst");
+		javax.swing.JButton searchTreeSetButton = new javax.swing.JButton("search treeset");
+		javax.swing.JButton searchPriorityQueueButton = new javax.swing.JButton("search priority queue");
+		javax.swing.JButton searchHashSetButton = new javax.swing.JButton("search hashset");
+		javax.swing.JButton searchArrayListButton = new javax.swing.JButton("search arraylist");
+		javax.swing.JButton searchSortedArrayList = new javax.swing.JButton("search sorted arraylist");
+		javax.swing.JButton searchArrayButton = new javax.swing.JButton("search array");
 		// frame
 		javax.swing.JFrame frame = new javax.swing.JFrame();
 		frame.setPreferredSize(new java.awt.Dimension(width, height));
@@ -45,7 +74,11 @@ public class roberts_program12 {
 		leftButtonPanel.setMinimumSize(new java.awt.Dimension(width2, height));
 		java.awt.GridBagLayout leftGridBagLayout = new java.awt.GridBagLayout();
 		leftButtonPanel.setLayout(leftGridBagLayout);
-		
+		java.awt.GridBagConstraints leftButtonPanelConstraints = new java.awt.GridBagConstraints();
+
+		// left buttons and labels
+
+
 		// right button panel
 		javax.swing.JPanel rightButtonPanel = new javax.swing.JPanel();
 		rightButtonPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0, 255), 2));
@@ -71,7 +104,10 @@ public class roberts_program12 {
 		frame.setContentPane(mainPanel);
 		frame.validate();
 		frame.setVisible(true);
+
+
 	}
+
 
 
 	//Start of backend
@@ -117,12 +153,12 @@ public class roberts_program12 {
 			bst.insertNode(currentNode);
 		}
 	}
-
+	//TODO searchBinarySearchTree()
 	private static int searchBinarySearchTree()
 	{
 		int count = 0;
 		for (int searchValue : searchValues) {
-			if (bst.getNode(bst.getRoot(), searchValue) != -1) {
+			if (bst.getNode(bst.getRoot(), searchValue).getKey() != null) {
 				count++;
 			}
 		}
@@ -136,10 +172,16 @@ public class roberts_program12 {
 			treeSetValues.add(sortValue);
 		}
 	}
-	//TODO searchTreeSet()
+	// DONE
 	private static int searchTreeSet()
 	{
-		return 0;
+		int count = 0;
+		for(int searchValue : searchValues) {
+			if (treeSetValues.contains(searchValue)) {
+				count++;
+			}
+		}
+		return count;
 	}
 
 	private static void addToHashSet()
@@ -152,7 +194,13 @@ public class roberts_program12 {
 	//TODO searchHashSet()
 	private static int searchHashSet()
 	{
-		return 0;
+		int count = 0;
+		for(int searchValue : searchValues) {
+			if (hashSetValues.contains(searchValue)) {
+				count++;
+			}
+		}
+		return count;
 	}
 	// DONE
 	private static void addToPriorityQueue()
@@ -180,7 +228,13 @@ public class roberts_program12 {
 	//TODO searchArrayList()
 	private static int searchArrayList()
 	{
-		return 0;
+		int count = 0;
+		for(int searchValue : searchValues) {
+			if (arrayListValues.contains(searchValue)) {
+				count++;
+			}
+		}
+		return count;
 	}
 	// DONE
 	private static void addToSortedArrayList()
@@ -193,7 +247,13 @@ public class roberts_program12 {
 	//TODO searchSortedArrayList()
 	private static int searchSortedArrayList()
 	{
-		return 0;
+		int count = 0;
+		for(int searchValue : searchValues) {
+			if(java.util.Collections.binarySearch(sortedArrayListValues, searchValue) >= 0) {
+				count++;
+			}
+		}
+		return count;
 	}
 	// DONE
 	private static void addToArray()
@@ -203,7 +263,9 @@ public class roberts_program12 {
 	//TODO searchArray()
 	private static int searchArray()
 	{
-		return 0;
+		for ( int i = 0; i < unsortedValues.length; i++) {
+			if (unsortedVa)
+		}
 	}
 	//TODO readData()
 	private static void readData(String filename, boolean readSortValues)
