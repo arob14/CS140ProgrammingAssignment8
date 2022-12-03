@@ -35,6 +35,9 @@ public class roberts_program12 {
 		javax.swing.JButton searchArrayListButton = new javax.swing.JButton("search arraylist");
 		javax.swing.JButton searchSortedArrayList = new javax.swing.JButton("search sorted arraylist");
 		javax.swing.JButton searchArrayButton = new javax.swing.JButton("search array");
+
+		// right labels
+		javax.swing.JLabel l = new javax.swing.JLabel();
 		// frame
 		javax.swing.JFrame frame = new javax.swing.JFrame();
 		frame.setPreferredSize(new java.awt.Dimension(width, height));
