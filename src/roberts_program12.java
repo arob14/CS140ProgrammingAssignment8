@@ -128,7 +128,7 @@ public class roberts_program12 {
 		int[] valuesCopy = sortValues.clone();
 		for (int i = 0; i < valuesCopy.length; i++) {
 			for (int j = 0; j < valuesCopy.length; j++) {
-				if (valuesCopy[j] < valuesCopy[j]) {
+				if (valuesCopy[j] < valuesCopy[i]) {
 					int temp = valuesCopy[i];
 					valuesCopy[i] = valuesCopy[j];
 					valuesCopy[j] = temp;
@@ -156,12 +156,12 @@ public class roberts_program12 {
 			bst.insertNode(currentNode);
 		}
 	}
-	//TODO searchBinarySearchTree()
+	// DONE
 	private static int searchBinarySearchTree()
 	{
 		int count = 0;
 		for (int searchValue : searchValues) {
-			if (bst.getNode(bst.getRoot(), searchValue).getKey() != null) {
+			if (bst.getNode(bst.getRoot(), searchValue) != null) {
 				count++;
 			}
 		}
