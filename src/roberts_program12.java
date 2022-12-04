@@ -139,12 +139,26 @@ public class roberts_program12 {
 
 	}
 
-	//TODO searchInts()
+	//DONE
 	private static int searchInts()
 	{
-		for (int searchInt : searchValues) {
-			if
+		int left = 0;
+		int right = sortedValues.length - 1;
+		int count = 0;
+		for (int searchValue : searchValues) {
+			while (left <= right) {
+				int middle = (left + right) / 2;
+				if (searchValue < sortedValues[middle]) {
+					right = middle - 1;
+				} else if (searchValue > sortedValues[middle]) {
+					left = middle + 1;
+				} else {
+					count++;
+				}
+			}
 		}
+		return count;
+
 	}
 
 	// DONE
@@ -194,7 +208,7 @@ public class roberts_program12 {
 			hashSetValues.add(sortValue);
 		}
 	}
-	//TODO searchHashSet()
+	//DONE
 	private static int searchHashSet()
 	{
 		int count = 0;
@@ -213,12 +227,16 @@ public class roberts_program12 {
 			priorityQueueValues.add(sortValue);
 		}
 	}
-	//TODO searchPriorityQueue()
+	//DONE
 	private static int searchPriorityQueue()
 	{
+		int count = 0;
 		for (int searchValue : searchValues) {
-			if (priorityQueueValues.contains(searchValue)) ret
+			if (priorityQueueValues.contains(searchValue)) {
+				count++;
+			}
 		}
+		return count;
 	}
 	// DONE
 	private static void addToArrayList()
@@ -228,7 +246,7 @@ public class roberts_program12 {
 			arrayListValues.add(sortValue);
 		}
 	}
-	//TODO searchArrayList()
+	//DONE
 	private static int searchArrayList()
 	{
 		int count = 0;
@@ -247,7 +265,7 @@ public class roberts_program12 {
 		}
 		java.util.Collections.sort(sortedArrayListValues);
 	}
-	//TODO searchSortedArrayList()
+	//DONE
 	private static int searchSortedArrayList()
 	{
 		int count = 0;
@@ -263,17 +281,36 @@ public class roberts_program12 {
 	{
 		unsortedValues = sortValues.clone();
 	}
-	//TODO searchArray()
+	//DONE
 	private static int searchArray()
 	{
-		for ( int i = 0; i < unsortedValues.length; i++) {
-			if (unsortedVa)
+		int count = 0;
+		for ( int searchValue : searchValues ) {
+			for (int arrayValue : unsortedValues) {
+				if (searchValue == arrayValue) count++;
+			}
 		}
+		return count;
 	}
 	//TODO readData()
 	private static void readData(String filename, boolean readSortValues)
 	{
+		if (readSortValues == true) {
+			try {
 
+			}
+			catch (Exception e) {
+
+			}
+		}
+		else {
+			try {
+
+			}
+			catch (Exception e) {
+
+			}
+		}
 	}
 
 	static class MenuItemActionListener implements java.awt.event.ActionListener
