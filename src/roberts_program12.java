@@ -37,7 +37,14 @@ public class roberts_program12 {
 		javax.swing.JButton searchArrayButton = new javax.swing.JButton("search array");
 
 		// right labels
-		javax.swing.JLabel l = new javax.swing.JLabel();
+		javax.swing.JLabel searchSortedIntsLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchBSTLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchTreeSetLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchPriorityQueueLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchHashSetLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchArrayListLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchSortedArrayListLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchArrayLabel = new javax.swing.JLabel();
 		// frame
 		javax.swing.JFrame frame = new javax.swing.JFrame();
 		frame.setPreferredSize(new java.awt.Dimension(width, height));
@@ -78,8 +85,6 @@ public class roberts_program12 {
 		java.awt.GridBagLayout leftGridBagLayout = new java.awt.GridBagLayout();
 		leftButtonPanel.setLayout(leftGridBagLayout);
 		java.awt.GridBagConstraints leftButtonPanelConstraints = new java.awt.GridBagConstraints();
-
-		// left buttons and labels
 
 
 		// right button panel
