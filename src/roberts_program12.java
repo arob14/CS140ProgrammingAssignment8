@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class roberts_program12 {
 	
@@ -86,6 +87,113 @@ public class roberts_program12 {
 		leftButtonPanel.setLayout(leftGridBagLayout);
 		java.awt.GridBagConstraints leftButtonPanelConstraints = new java.awt.GridBagConstraints();
 
+		leftButtonPanelConstraints.weightx = 1;
+		leftButtonPanelConstraints.weighty = 1;
+		leftButtonPanelConstraints.fill = GridBagConstraints.NONE;
+		leftButtonPanelConstraints.anchor = GridBagConstraints.LINE_START;
+
+
+		// left buttons gridbag assignments
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 0;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(sortIntsButton, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 1;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(addToBSTButton, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 2;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(addToTreeSetButton, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 3;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(addToPriorityQueueButton, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 4;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(addToHashSetButton, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 5;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(addToArrayListButton, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 6;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(addToSortedArrayListButton, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 0;
+		leftButtonPanelConstraints.gridy = 7;
+		leftButtonPanelConstraints.gridwidth = 1;
+		leftGridBagLayout.setConstraints(addToArrayButton, leftButtonPanelConstraints);
+
+		// add left buttons to panel
+		leftButtonPanel.add(sortIntsButton);
+		leftButtonPanel.add(addToBSTButton);
+		leftButtonPanel.add(addToTreeSetButton);
+		leftButtonPanel.add(addToPriorityQueueButton);
+		leftButtonPanel.add(addToHashSetButton);
+		leftButtonPanel.add(addToArrayListButton);
+		leftButtonPanel.add(addToSortedArrayListButton);
+		leftButtonPanel.add(addToArrayButton);
+
+		// left label gridbag assignment
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 0;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(sortIntsLabel, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 1;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(addToBSTLabel, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 2;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(addToTreeSetLabel, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 3;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(addToPriorityQueueLabel, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 4;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(addToHashSetLabel, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 5;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(addToArrayListLabel, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 6;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(addToSortedArrayListLabel, leftButtonPanelConstraints);
+
+		leftButtonPanelConstraints.gridx = 1;
+		leftButtonPanelConstraints.gridy = 7;
+		leftButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		leftGridBagLayout.setConstraints(addToArrayLabel, leftButtonPanelConstraints);
+
+		// add left labels to panel
+		leftButtonPanel.add(sortIntsLabel);
+		leftButtonPanel.add(addToBSTLabel);
+		leftButtonPanel.add(addToTreeSetLabel);
+		leftButtonPanel.add(addToPriorityQueueLabel);
+		leftButtonPanel.add(addToHashSetLabel);
+		leftButtonPanel.add(addToArrayListLabel);
+		leftButtonPanel.add(addToSortedArrayListLabel);
+		leftButtonPanel.add(addToArrayLabel);
 
 		// right button panel
 		javax.swing.JPanel rightButtonPanel = new javax.swing.JPanel();
