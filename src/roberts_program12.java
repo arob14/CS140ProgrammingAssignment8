@@ -502,6 +502,7 @@ public class roberts_program12 {
 	//DONE
 	private static int searchArray()
 	{
+		z
 		int count = 0;
 		for ( int searchValue : searchValues ) {
 			for (int arrayValue : unsortedValues) {
@@ -515,7 +516,12 @@ public class roberts_program12 {
 	{
 		if (readSortValues == true) {
 			try {
-
+				java.io.BufferedReader input = new java.io.BufferedReader(new java.io.InputStreamReader(new java.io.FileInputStream(filename)));
+				String inn;
+				while ( (inn = input.readLine()) != null) {
+					.add(Integer.parseInt(inn));
+				}
+				input.close();
 			}
 			catch (Exception e) {
 
