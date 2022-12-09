@@ -198,12 +198,99 @@ public class roberts_program12 {
 		// right button panel
 		javax.swing.JPanel rightButtonPanel = new javax.swing.JPanel();
 		rightButtonPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0, 255), 2));
-
 		rightButtonPanel.setPreferredSize(new java.awt.Dimension(width2, height));
 		rightButtonPanel.setMinimumSize(new java.awt.Dimension(width2, height));
 		java.awt.GridBagLayout rightGridBagLayout = new java.awt.GridBagLayout();
 		rightButtonPanel.setLayout(rightGridBagLayout);
-		
+		java.awt.GridBagConstraints rightButtonPanelConstraints = new java.awt.GridBagConstraints();
+
+		rightButtonPanelConstraints.weightx = 1;
+		rightButtonPanelConstraints.weighty = 1;
+		rightButtonPanelConstraints.fill = GridBagConstraints.NONE;
+		rightButtonPanelConstraints.anchor = GridBagConstraints.LINE_START;
+
+		// right button gridbag
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 0;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchSortedIntsButton, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 1;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchBSTButton, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 2;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchTreeSetButton, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 3;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchPriorityQueueButton, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 4;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchHashSetButton, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 5;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchArrayListButton, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 6;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchSortedArrayList, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 0;
+		rightButtonPanelConstraints.gridy = 7;
+		rightButtonPanelConstraints.gridwidth = 1;
+		rightGridBagLayout.setConstraints(searchArrayButton, rightButtonPanelConstraints);
+
+		// right label gridbag
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 0;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchSortedIntsLabel, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 1;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchBSTLabel, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 2;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchTreeSetLabel, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 3;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchPriorityQueueLabel, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 4;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchHashSetLabel, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 5;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchArrayListLabel, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 6;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchSortedArrayListLabel, rightButtonPanelConstraints);
+
+		rightButtonPanelConstraints.gridx = 1;
+		rightButtonPanelConstraints.gridy = 7;
+		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+		rightGridBagLayout.setConstraints(searchArrayLabel, rightButtonPanelConstraints);
+
 		// main panel
 		javax.swing.JPanel mainButtonPanel = new javax.swing.JPanel();
 		mainButtonPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 2, 255), 2));
