@@ -34,18 +34,18 @@ public class roberts_program12 {
 		javax.swing.JButton searchPriorityQueueButton = new javax.swing.JButton("search priority queue");
 		javax.swing.JButton searchHashSetButton = new javax.swing.JButton("search hashset");
 		javax.swing.JButton searchArrayListButton = new javax.swing.JButton("search arraylist");
-		javax.swing.JButton searchSortedArrayList = new javax.swing.JButton("search sorted arraylist");
+		javax.swing.JButton searchSortedArrayListButton = new javax.swing.JButton("search sorted arraylist");
 		javax.swing.JButton searchArrayButton = new javax.swing.JButton("search array");
 
 		// right labels
-		javax.swing.JLabel searchSortedIntsLabel = new javax.swing.JLabel();
-		javax.swing.JLabel searchBSTLabel = new javax.swing.JLabel();
-		javax.swing.JLabel searchTreeSetLabel = new javax.swing.JLabel();
-		javax.swing.JLabel searchPriorityQueueLabel = new javax.swing.JLabel();
-		javax.swing.JLabel searchHashSetLabel = new javax.swing.JLabel();
-		javax.swing.JLabel searchArrayListLabel = new javax.swing.JLabel();
-		javax.swing.JLabel searchSortedArrayListLabel = new javax.swing.JLabel();
-		javax.swing.JLabel searchArrayLabel = new javax.swing.JLabel();
+		javax.swing.JLabel searchSortedIntsLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel searchBSTLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel searchTreeSetLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel searchPriorityQueueLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel searchHashSetLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel searchArrayListLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel searchSortedArrayListLabel = new javax.swing.JLabel("no result");
+		javax.swing.JLabel searchArrayLabel = new javax.swing.JLabel("no result");
 		// frame
 		javax.swing.JFrame frame = new javax.swing.JFrame();
 		frame.setPreferredSize(new java.awt.Dimension(width, height));
@@ -243,7 +243,7 @@ public class roberts_program12 {
 		rightButtonPanelConstraints.gridx = 0;
 		rightButtonPanelConstraints.gridy = 6;
 		rightButtonPanelConstraints.gridwidth = 1;
-		rightGridBagLayout.setConstraints(searchSortedArrayList, rightButtonPanelConstraints);
+		rightGridBagLayout.setConstraints(searchSortedArrayListButton, rightButtonPanelConstraints);
 
 		rightButtonPanelConstraints.gridx = 0;
 		rightButtonPanelConstraints.gridy = 7;
@@ -291,6 +291,24 @@ public class roberts_program12 {
 		rightButtonPanelConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
 		rightGridBagLayout.setConstraints(searchArrayLabel, rightButtonPanelConstraints);
 
+		// add right buttons and labels
+		rightButtonPanel.add(searchSortedIntsButton);
+		rightButtonPanel.add(searchBSTButton);
+		rightButtonPanel.add(searchTreeSetButton);
+		rightButtonPanel.add(searchPriorityQueueButton);
+		rightButtonPanel.add(searchHashSetButton);
+		rightButtonPanel.add(searchArrayListButton);
+		rightButtonPanel.add(searchSortedArrayListButton);
+		rightButtonPanel.add(searchArrayButton);
+
+		rightButtonPanel.add(searchSortedIntsLabel);
+		rightButtonPanel.add(searchBSTLabel);
+		rightButtonPanel.add(searchTreeSetLabel);
+		rightButtonPanel.add(searchPriorityQueueLabel);
+		rightButtonPanel.add(searchHashSetLabel);
+		rightButtonPanel.add(searchArrayListLabel);
+		rightButtonPanel.add(searchSortedArrayListLabel);
+		rightButtonPanel.add(searchArrayLabel);
 		// main panel
 		javax.swing.JPanel mainButtonPanel = new javax.swing.JPanel();
 		mainButtonPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 2, 255), 2));
