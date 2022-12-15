@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af9c6d2e-2821-49ea-98a6-af944d7e0992" name="Changes" comment="added buttons and labels to right panel">
+    <list default="true" id="af9c6d2e-2821-49ea-98a6-af944d7e0992" name="Changes" comment="progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/roberts_program12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roberts_program12.java" afterDir="false" />
     </list>
@@ -45,7 +45,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.example2a">
     <configuration name="example2a" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example2a" />
       <module name="CS140ProgrammingAssignment8" />
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670601634247</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="progress">
+      <created>1670602403176</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670602403176</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,9 +189,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <MESSAGE value="progress" />
     <MESSAGE value="added right gridbags" />
     <MESSAGE value="added buttons and labels to right panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="added buttons and labels to right panel" />
+    <MESSAGE value="progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress" />
   </component>
 </project>

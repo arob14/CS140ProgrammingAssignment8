@@ -1,7 +1,6 @@
-import javax.swing.*;
 import java.awt.*;
 
-public class roberts_program12 {
+public class roberts_program8 {
 	
 	private static int width = 700;
 	private static int height = 350;
