@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af9c6d2e-2821-49ea-98a6-af944d7e0992" name="Changes" comment="progress">
+    <list default="true" id="af9c6d2e-2821-49ea-98a6-af944d7e0992" name="Changes" comment="set up action listeners and fixed the buttons being enabled">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roberts_program12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roberts_program12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roberts_program8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roberts_program8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,16 +25,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ajroberts/IdeaProjects/CS140ProgrammingAssignment8/assignment&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/ajroberts/IdeaProjects/CS140ProgrammingAssignment8/assignment",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assignment" />
@@ -45,7 +46,15 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.example2a">
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="roberts_program8" />
+      <module name="CS140ProgrammingAssignment8" />
+      <option name="PROGRAM_PARAMETERS" value="sort_data_100000.txt search_data_100000.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="example2a" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example2a" />
       <module name="CS140ProgrammingAssignment8" />
@@ -67,6 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.example2a" />
+      <item itemvalue="Application.example4b" />
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.example4" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.example4" />
@@ -173,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670602403176</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="name change">
+      <created>1671129517037</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671129517037</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +214,12 @@
     <MESSAGE value="added right gridbags" />
     <MESSAGE value="added buttons and labels to right panel" />
     <MESSAGE value="progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress" />
+    <MESSAGE value="name change" />
+    <MESSAGE value="set up action listeners and fixed the buttons being enabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="set up action listeners and fixed the buttons being enabled" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

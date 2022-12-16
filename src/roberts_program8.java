@@ -1,50 +1,72 @@
 import java.awt.*;
+import java.util.ArrayList;
+
+
+//TODO action listeners for buttons
 
 public class roberts_program8 {
 	
 	private static int width = 700;
 	private static int height = 350;
 	private static int width2 = 350;
+	// left buttons
+	private static javax.swing.JButton sortIntsButton = new javax.swing.JButton("sort ints");
+	private static javax.swing.JButton addToBSTButton = new javax.swing.JButton("add to bst");
+	private static javax.swing.JButton addToTreeSetButton = new javax.swing.JButton("add to treeset");
+	private static 	javax.swing.JButton addToPriorityQueueButton = new javax.swing.JButton("add to priority queue");
+	private static 	javax.swing.JButton addToHashSetButton = new javax.swing.JButton("add to hashset");
+	private static 	javax.swing.JButton addToArrayListButton = new javax.swing.JButton("add to arraylist");
+	private static javax.swing.JButton addToSortedArrayListButton = new javax.swing.JButton("add to sorted arraylist");
+	private static javax.swing.JButton addToArrayButton = new javax.swing.JButton("add to array");
+
+	// Left labels
+	private static javax.swing.JLabel sortIntsLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel  addToBSTLabel = new javax.swing.JLabel("no result");
+	private static 	javax.swing.JLabel addToTreeSetLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel addToPriorityQueueLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel addToHashSetLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel addToArrayListLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel addToSortedArrayListLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel addToArrayLabel = new javax.swing.JLabel("no result");
+
+	// right buttons
+	private static javax.swing.JButton searchSortedIntsButton = new javax.swing.JButton("search sorted ints");
+	private static 	javax.swing.JButton searchBSTButton = new javax.swing.JButton("search bst");
+	private static javax.swing.JButton searchTreeSetButton = new javax.swing.JButton("search treeset");
+	private static javax.swing.JButton searchPriorityQueueButton = new javax.swing.JButton("search priority queue");
+	private static javax.swing.JButton searchHashSetButton = new javax.swing.JButton("search hashset");
+	private static javax.swing.JButton searchArrayListButton = new javax.swing.JButton("search arraylist");
+	private static javax.swing.JButton searchSortedArrayListButton = new javax.swing.JButton("search sorted arraylist");
+	private static javax.swing.JButton searchArrayButton = new javax.swing.JButton("search array");
+
+	// right labels
+	private static javax.swing.JLabel searchSortedIntsLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel searchBSTLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel searchTreeSetLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel searchPriorityQueueLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel searchHashSetLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel searchArrayListLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel searchSortedArrayListLabel = new javax.swing.JLabel("no result");
+	private static javax.swing.JLabel searchArrayLabel = new javax.swing.JLabel("no result");
 	public static void main(String[] args) {
-		// left buttons
-		javax.swing.JButton sortIntsButton = new javax.swing.JButton("sort ints");
-		javax.swing.JButton addToBSTButton = new javax.swing.JButton("add to bst");
-		javax.swing.JButton addToTreeSetButton = new javax.swing.JButton("add to treeset");
-		javax.swing.JButton addToPriorityQueueButton = new javax.swing.JButton("add to priority queue");
-		javax.swing.JButton addToHashSetButton = new javax.swing.JButton("add to hashset");
-		javax.swing.JButton addToArrayListButton = new javax.swing.JButton("add to arraylist");
-		javax.swing.JButton addToSortedArrayListButton = new javax.swing.JButton("add to sorted arraylist");
-		javax.swing.JButton addToArrayButton = new javax.swing.JButton("add to array");
+		//disable all buttons initially
+		sortIntsButton.setEnabled(false);
+		addToBSTButton.setEnabled(false);
+		addToTreeSetButton.setEnabled(false);
+		addToPriorityQueueButton.setEnabled(false);
+		addToHashSetButton.setEnabled(false);
+		addToArrayListButton.setEnabled(false);
+		addToSortedArrayListButton.setEnabled(false);
+		addToArrayButton.setEnabled(false);
 
-		// Left labels
-		javax.swing.JLabel sortIntsLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel  addToBSTLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel addToTreeSetLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel addToPriorityQueueLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel addToHashSetLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel addToArrayListLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel addToSortedArrayListLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel addToArrayLabel = new javax.swing.JLabel("no result");
-
-		// right buttons
-		javax.swing.JButton searchSortedIntsButton = new javax.swing.JButton("search sorted ints");
-		javax.swing.JButton searchBSTButton = new javax.swing.JButton("search bst");
-		javax.swing.JButton searchTreeSetButton = new javax.swing.JButton("search treeset");
-		javax.swing.JButton searchPriorityQueueButton = new javax.swing.JButton("search priority queue");
-		javax.swing.JButton searchHashSetButton = new javax.swing.JButton("search hashset");
-		javax.swing.JButton searchArrayListButton = new javax.swing.JButton("search arraylist");
-		javax.swing.JButton searchSortedArrayListButton = new javax.swing.JButton("search sorted arraylist");
-		javax.swing.JButton searchArrayButton = new javax.swing.JButton("search array");
-
-		// right labels
-		javax.swing.JLabel searchSortedIntsLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel searchBSTLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel searchTreeSetLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel searchPriorityQueueLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel searchHashSetLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel searchArrayListLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel searchSortedArrayListLabel = new javax.swing.JLabel("no result");
-		javax.swing.JLabel searchArrayLabel = new javax.swing.JLabel("no result");
+		searchSortedIntsButton.setEnabled(false);
+		searchBSTButton.setEnabled(false);
+		searchTreeSetButton.setEnabled(false);
+		searchPriorityQueueButton.setEnabled(false);
+		searchHashSetButton.setEnabled(false);
+		searchArrayListButton.setEnabled(false);
+		searchSortedArrayListButton.setEnabled(false);
+		searchArrayButton.setEnabled(false);
 		// frame
 		javax.swing.JFrame frame = new javax.swing.JFrame();
 		frame.setPreferredSize(new java.awt.Dimension(width, height));
@@ -70,8 +92,8 @@ public class roberts_program8 {
 		
 		// file menu action listeners
 		MenuItemActionListener fileExitMenuItemActionListner = new MenuItemActionListener(fileExit);
-		MenuItemActionListener fileReadSortFileMenuItemActionListener = new MenuItemActionListener(fileReadSortFile);
-		MenuItemActionListener fileReadSearchFileMenuItemActionListner = new MenuItemActionListener(fileReadSearchFile);
+		MenuItemActionListener fileReadSortFileMenuItemActionListener = new MenuItemActionListener(fileReadSortFile, args[0]);
+		MenuItemActionListener fileReadSearchFileMenuItemActionListner = new MenuItemActionListener(fileReadSearchFile, args[1]);
 		
 		fileReadSearchFile.addActionListener(fileReadSearchFileMenuItemActionListner);
 		fileReadSortFile.addActionListener(fileReadSortFileMenuItemActionListener);
@@ -325,6 +347,44 @@ public class roberts_program8 {
 		frame.validate();
 		frame.setVisible(true);
 
+		//create action listeners
+		ButtonActionListener sortIntsAL = new ButtonActionListener(sortIntsButton, sortIntsLabel);
+		ButtonActionListener addToBSTAL = new ButtonActionListener(addToBSTButton, addToBSTLabel);
+		ButtonActionListener addToHashSetAL = new ButtonActionListener(addToHashSetButton, addToHashSetLabel);
+		ButtonActionListener addToTreeSetAL = new ButtonActionListener(addToTreeSetButton, addToTreeSetLabel);
+		ButtonActionListener addToPriorityQueueAL = new ButtonActionListener(addToPriorityQueueButton,addToPriorityQueueLabel);
+		ButtonActionListener addToArrayListAL = new ButtonActionListener(addToArrayListButton, addToArrayListLabel);
+		ButtonActionListener addToSortedArrayListAL = new ButtonActionListener(addToSortedArrayListButton, addToSortedArrayListLabel);
+		ButtonActionListener addToArrayAL = new ButtonActionListener(addToArrayButton, addToArrayLabel);
+
+		ButtonActionListener searchSortedIntsAL = new ButtonActionListener(searchSortedIntsButton, searchSortedIntsLabel);
+		ButtonActionListener searchBSTAL = new ButtonActionListener(searchBSTButton, searchBSTLabel);
+		ButtonActionListener searchHashSetAL = new ButtonActionListener(searchHashSetButton, searchHashSetLabel);
+		ButtonActionListener searchTreeSetAL = new ButtonActionListener(searchTreeSetButton, searchTreeSetLabel);
+		ButtonActionListener searchPriorityQueueAL = new ButtonActionListener(searchPriorityQueueButton,searchPriorityQueueLabel);
+		ButtonActionListener searchArrayListAL = new ButtonActionListener(searchArrayListButton, searchArrayListLabel);
+		ButtonActionListener searchSortedArrayListAL = new ButtonActionListener(searchSortedArrayListButton,searchSortedArrayListLabel);
+		ButtonActionListener searchArrayAL = new ButtonActionListener(searchArrayButton, searchArrayLabel);
+
+		//add AL's to buttons
+		sortIntsButton.addActionListener(sortIntsAL);
+		addToBSTButton.addActionListener(addToBSTAL);
+		addToHashSetButton.addActionListener(addToHashSetAL);
+		addToTreeSetButton.addActionListener(addToTreeSetAL);
+		addToPriorityQueueButton.addActionListener(addToPriorityQueueAL);
+		addToArrayListButton.addActionListener(addToArrayListAL);
+		addToSortedArrayListButton.addActionListener(addToSortedArrayListAL);
+		addToArrayButton.addActionListener(addToArrayAL);
+
+		searchSortedIntsButton.addActionListener(searchSortedIntsAL);
+		searchBSTButton.addActionListener(searchBSTAL);
+		searchHashSetButton.addActionListener(searchHashSetAL);
+		searchTreeSetButton.addActionListener(searchTreeSetAL);
+		searchPriorityQueueButton.addActionListener(searchPriorityQueueAL);
+		searchArrayListButton.addActionListener(searchArrayListAL);
+		searchSortedArrayListButton.addActionListener(searchSortedArrayListAL);
+		searchArrayButton.addActionListener(searchArrayAL);
+
 
 	}
 
@@ -339,43 +399,63 @@ public class roberts_program8 {
 	private static java.util.ArrayList<Integer> arrayListValues = new java.util.ArrayList<>();
 	private static java.util.ArrayList<Integer> sortedArrayListValues = new java.util.ArrayList<>();
 	private static roberts_BinarySearchTree bst = new roberts_BinarySearchTree();
+	private static boolean searchValuesRead = false;
+	private static boolean intsSorted = false;
+	private static boolean bstFull = false;
+	private static boolean treeSetFull = false;
+	private static boolean hashSetFull = false;
+	private static boolean priorityQueueFull = false;
+	private static boolean arrayListFull = false;
+	private static boolean sortedArrayListFull = false;
+	private static boolean arrayFull = false;
+
 
 	// DONE
-	private static int[] selectionSort() {
-		int[] valuesCopy = sortValues.clone();
-		for (int i = 0; i < valuesCopy.length; i++) {
-			for (int j = 0; j < valuesCopy.length; j++) {
-				if (valuesCopy[j] < valuesCopy[i]) {
-					int temp = valuesCopy[i];
-					valuesCopy[i] = valuesCopy[j];
-					valuesCopy[j] = temp;
+	private static void selectionSort() {
+		sortedValues = sortValues.clone();
+		int min;
+		for (int i = 0; i < sortedValues.length; i++) {
+			min = i;
+			for (int j = i+1; j < sortedValues.length; j++) {
+				if (sortedValues[j] < sortedValues[min]) {
+					min = j;
 				}
 			}
+			if (min != i) {
+				int temp = sortedValues[i];
+				sortedValues[i] = sortedValues[min];
+				sortedValues[min] = temp;
+			}
 		}
-		return valuesCopy;
+		intsSorted = true;
+		if (searchValuesRead) searchSortedIntsButton.setEnabled(true);
 
 	}
 
 	//DONE
 	private static int searchInts()
 	{
-		int left = 0;
-		int right = sortedValues.length - 1;
 		int count = 0;
 		for (int searchValue : searchValues) {
-			while (left <= right) {
-				int middle = (left + right) / 2;
+			int bottom = 0;
+			int top = sortedValues.length - 1;
+			while (bottom <= top) {
+				int middle = (bottom + top) / 2;
+
 				if (searchValue < sortedValues[middle]) {
-					right = middle - 1;
-				} else if (searchValue > sortedValues[middle]) {
-					left = middle + 1;
-				} else {
+					top = middle - 1;
+				}
+				else if (searchValue > sortedValues[middle]) {
+					bottom = middle + 1;
+				}
+				else if(searchValue == sortedValues[middle]) {
 					count++;
+					break;
 				}
 			}
+
 		}
 		return count;
-
 	}
 
 	// DONE
@@ -386,6 +466,8 @@ public class roberts_program8 {
 			Node currentNode = new Node(sortValue);
 			bst.insertNode(currentNode);
 		}
+		bstFull = true;
+		if (searchValuesRead) searchBSTButton.setEnabled(true);
 	}
 	// DONE
 	private static int searchBinarySearchTree()
@@ -405,6 +487,8 @@ public class roberts_program8 {
 		{
 			treeSetValues.add(sortValue);
 		}
+		treeSetFull = true;
+		if (searchValuesRead) searchTreeSetButton.setEnabled(true);
 	}
 	// DONE
 	private static int searchTreeSet()
@@ -424,6 +508,8 @@ public class roberts_program8 {
 		{
 			hashSetValues.add(sortValue);
 		}
+		hashSetFull = true;
+		if (searchValuesRead) searchHashSetButton.setEnabled(true);
 	}
 	//DONE
 	private static int searchHashSet()
@@ -443,6 +529,8 @@ public class roberts_program8 {
 		{
 			priorityQueueValues.add(sortValue);
 		}
+		priorityQueueFull = true;
+		if (searchValuesRead) searchPriorityQueueButton.setEnabled(true);
 	}
 	//DONE
 	private static int searchPriorityQueue()
@@ -462,6 +550,8 @@ public class roberts_program8 {
 		{
 			arrayListValues.add(sortValue);
 		}
+		arrayListFull = true;
+		if (searchValuesRead) searchArrayListButton.setEnabled(true);
 	}
 	//DONE
 	private static int searchArrayList()
@@ -481,6 +571,8 @@ public class roberts_program8 {
 			sortedArrayListValues.add(sortValue);
 		}
 		java.util.Collections.sort(sortedArrayListValues);
+		sortedArrayListFull = true;
+		if (searchValuesRead) searchSortedArrayListButton.setEnabled(true);
 	}
 	//DONE
 	private static int searchSortedArrayList()
@@ -497,15 +589,17 @@ public class roberts_program8 {
 	private static void addToArray()
 	{
 		unsortedValues = sortValues.clone();
+		arrayFull = true;
+		if (searchValuesRead) searchArrayButton.setEnabled(true);
 	}
 	//DONE
 	private static int searchArray()
 	{
-		z
 		int count = 0;
 		for ( int searchValue : searchValues ) {
 			for (int arrayValue : unsortedValues) {
-				if (searchValue == arrayValue) count++;
+				if (searchValue == arrayValue)
+					count++;
 			}
 		}
 		return count;
@@ -513,25 +607,59 @@ public class roberts_program8 {
 	//TODO readData()
 	private static void readData(String filename, boolean readSortValues)
 	{
-		if (readSortValues == true) {
+		java.util.ArrayList<Integer> tempValues = new ArrayList<Integer>();
+		if (readSortValues) {
 			try {
 				java.io.BufferedReader input = new java.io.BufferedReader(new java.io.InputStreamReader(new java.io.FileInputStream(filename)));
 				String inn;
 				while ( (inn = input.readLine()) != null) {
-					.add(Integer.parseInt(inn));
+					tempValues.add(Integer.parseInt(inn));
 				}
 				input.close();
+				sortValues = new int[tempValues.size()];
+				for (int i = 0; i < tempValues.size(); i++) {
+					sortValues[i] = tempValues.get(i);
+				}
+
+				sortIntsButton.setEnabled(true);
+				addToBSTButton.setEnabled(true);
+				addToTreeSetButton.setEnabled(true);
+				addToPriorityQueueButton.setEnabled(true);
+				addToHashSetButton.setEnabled(true);
+				addToArrayListButton.setEnabled(true);
+				addToSortedArrayListButton.setEnabled(true);
+				addToArrayButton.setEnabled(true);
 			}
 			catch (Exception e) {
-
+				System.out.println(e.toString());
 			}
 		}
 		else {
 			try {
+				java.io.BufferedReader input = new java.io.BufferedReader(new java.io.InputStreamReader(new java.io.FileInputStream(filename)));
+				String inn;
+				while ( (inn = input.readLine()) != null) {
+					tempValues.add(Integer.parseInt(inn));
+				}
+				input.close();
+				searchValues = new int[tempValues.size()];
+				for (int i = 0; i < tempValues.size(); i++) {
+					searchValues[i] = tempValues.get(i);
+				}
 
+				searchValuesRead = true;
+
+				if(intsSorted) searchSortedIntsButton.setEnabled(true);
+				if(bstFull) searchBSTButton.setEnabled(true);
+				if(treeSetFull) searchTreeSetButton.setEnabled(true);
+				if(priorityQueueFull) searchPriorityQueueButton.setEnabled(true);
+				if(hashSetFull) searchHashSetButton.setEnabled(true);
+				if(arrayListFull) searchArrayListButton.setEnabled(true);
+				if(sortedArrayListFull) searchSortedArrayListButton.setEnabled(true);
+				if(arrayFull) searchArrayButton.setEnabled(true);
 			}
 			catch (Exception e) {
-
+				System.out.println(e.toString());
 			}
 		}
 	}
@@ -541,7 +669,13 @@ public class roberts_program8 {
 		// the menu item associated with the action listener, so that we can
 		// share this one class with multiple menu items
 		private javax.swing.JMenuItem m;
+		private String filename;
 		
+		MenuItemActionListener(javax.swing.JMenuItem m, String filename)
+		{
+			this.m = m;
+			this.filename = filename;
+		}
 		MenuItemActionListener(javax.swing.JMenuItem m)
 		{
 			this.m = m;
@@ -559,12 +693,12 @@ public class roberts_program8 {
 			}
 			if( m.getText().toLowerCase().equals("read sort file") )
 			{
-				
+				readData(filename, true);
 				System.out.println("read sort file");
 			}
 			if( m.getText().toLowerCase().equals("read search file") )
 			{
-				
+				readData(filename, false);
 				System.out.println("read search file");
 			}
 		}
@@ -575,15 +709,138 @@ public class roberts_program8 {
 		// the button associated with the action listener, so that we can
 		// share this one class with multiple buttons
 		private javax.swing.JButton b;
+		private javax.swing.JLabel l;
 		
-		ButtonActionListener(javax.swing.JButton b)
+		ButtonActionListener(javax.swing.JButton b, javax.swing.JLabel l)
 		{
 			this.b = b;
+			this.l = l;
 		}
 		
 		public void actionPerformed(java.awt.event.ActionEvent e)
 		{
 			System.out.println("action performed on " + b.getText() + " button");
+
+			if(b.getText().toLowerCase().equals("sort ints")) {
+				long t0 = System.currentTimeMillis();
+				selectionSort();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("add to bst")) {
+				long t0 = System.currentTimeMillis();
+				addToBinarySearchTree();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("add to treeset")) {
+				long t0 = System.currentTimeMillis();
+				addToTreeSet();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("add to priority queue")) {
+				long t0 = System.currentTimeMillis();
+				addToPriorityQueue();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("add to hashset")) {
+				long t0 = System.currentTimeMillis();
+				addToHashSet();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("add to arraylist")) {
+				long t0 = System.currentTimeMillis();
+				addToArrayList();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("add to sorted arraylist")) {
+				long t0 = System.currentTimeMillis();
+				addToSortedArrayList();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("add to array")) {
+				long t0 = System.currentTimeMillis();
+				addToArray();
+				long t1 = System.currentTimeMillis();
+				l.setText(t1-t0 + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search sorted ints")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchInts();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search bst")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchBinarySearchTree();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search treeset")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchTreeSet();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search priority queue")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchPriorityQueue();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search hashset")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchHashSet();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search arraylist")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchArrayList();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search sorted arraylist")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchSortedArrayList();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
+			if(b.getText().toLowerCase().equals("search array")) {
+				long t0 = System.currentTimeMillis();
+				int count = searchArray();
+				long t1 = System.currentTimeMillis();
+				long time = t1 - t0;
+				l.setText(count+" / "+ time + "ms");
+
+			}
 		}
 	}
 
